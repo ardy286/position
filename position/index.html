@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <!-- Ceci vient toujors après Leaflet de CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/javascript/position.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body onload="bloquer()">
+    <div class="centre">
+        <button onclick="localiser()">Localiser</button>
+        <div id="principale" class="principale">
+            <div id="map"></div>
+            <div class="information">
+                <p>Ville(Pays):<br><span id="ville"></span>(<span id="pays"></span>)</p>
+                <img class="img" src="" id="iconeTemperature">
+                <p><span id="temperature"></span>°C<br><span id="etat"></span></p>
+                <img class="img" src="./images/humidite.png">
+                <p><span id="humidite"></span>%<br>d'humidité</p>
+                <img class="img" src="./images/vent.png">
+                <p>Vitesse du<br>vent:<br><span id="vent"></span> km/h</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

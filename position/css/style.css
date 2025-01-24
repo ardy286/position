@@ -1,0 +1,83 @@
+#map
+{
+    margin-top: 5%;
+    height: 80%;
+    width: 90%;
+    border: 1px solid black;
+}
+
+body
+{
+    background: url(/images/backgroung.jpg) no-repeat fixed center/cover;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+button
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: auto;
+    font-size: 19px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid cyan;
+    width: 15%;
+}
+
+
+button:hover
+{
+    border: 2px solid cyan;
+    background: cyan;
+    color: black;
+}
+
+button:active
+{
+    background: plum;
+    color: black;
+    border: 2px solid white;
+}
+
+.centre
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 98%;
+    width: 100%;
+}
+
+.principale
+{
+    background:azure;
+    border: 2px solid cyan;
+    border-radius: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.information
+{
+    margin-left: 1%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img
+{
+    width: 42px;
+    height: 42px;
+    background: black;
+    border-radius: 2px;
+}
